@@ -11,7 +11,8 @@ function PersonalPage() {
   console.log(id);
 
   const usersContext = useContext(UsersContext);
-  //   const find
+  const profileData =
+    id !== "personal" ? usersContext.employees.at(id - 1) : null;
 
   const guidelines =
     id === "personal"
@@ -26,10 +27,10 @@ function PersonalPage() {
   return (
     <div className="pagelay">
       <div className="flex">
-        <h1>{id === "personal" ? "My" : `${"Mary"}'s`} stats:</h1>
+        <h1>{id === "personal" ? "My" : `${profileData.name}'s`} stats:</h1>
         {id !== "personal" && (
           <div className="flex2">
-            <h2>Points: 30</h2>
+            <h2>Points: {profileData.points}</h2>
             <img className="icon" src={icon} alt="" />
           </div>
         )}
@@ -53,6 +54,7 @@ function PersonalPage() {
             <img src={Back} alt="" />
           </NavLink>
         )}
+        <button className="new">New</button>
       </div>
     </div>
   );
