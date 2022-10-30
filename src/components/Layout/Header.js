@@ -8,15 +8,13 @@ function Header() {
         <figure className="logo">
           <img src={logo} alt="logo-img" />
         </figure>
+        
         <div class="flex">
           <label class="s">
             <input type="checkbox"/>
             <span class="s1"></span>
-            </label>
-            <label class="s">
-            <input type="checkbox"/>
-            <span class="s2"></span>
           </label>
+            
         </div>
       </header>
     </>

@@ -1,10 +1,22 @@
 .header {
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: auto;
     height: max-content;
     background-color: #363635;
-    box-shadow: 7px 0 10px rgba(#eee, 0.1);
-    padding: 0.5rem;
+    box-shadow: 0 8px 9px -5px #000000;
+    
   }
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-end;
+
+}
 .s{
     position: relative;
     padding: 20px;
@@ -13,6 +25,8 @@
     display: none;
   }
 .s1{
+    
+    translate: 10%;
     width: 100px;
     height: 40px;
     background: #ccc;
@@ -28,37 +42,17 @@
     height: 32px;
     left: 4px;
     bottom: 4px;
-    background: white;
+    background: url('../../images/company.png') 0 0px no-repeat;
+    background-size: 100%;
+    background-position: center;
   }
   .s input:checked + .s1{
-    background: #03a9f4;
+    background: #31572C;
   }
-  .s input:checked + .s1:before{
+
+  input:checked + .s1:before{
     left: 64px;
-  }
-  .s2{
-    width: 100px;
-    height: 40px;
-    background: #ccc;
-    display: block;
-    overflow: hidden;
-    cursor: pointer;
-    transition: 0.4s;
-    border-radius: 20px;
-  }
-  .s2:before{
-    content: '';
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    left: 4px;
-    bottom: 4px;
-    background: white;
-    border-radius: 50%;
-  }
-  .s input:checked + .s2{
-    background: #03a9f4;
-  }
-  .s input:checked + .s2:before{
-    left: 64px;
+    background: url('../../images/icons8-caretaker-100.png') 0 0px no-repeat;
+    background-position: center;
+    background-size: 100%;
   }
