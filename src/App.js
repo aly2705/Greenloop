@@ -2,6 +2,7 @@
 import './App.css';
 import ManagerPage from './components/managerpage';
 import PersonalPage from './components/personalpage';
+import SelfPage from './components/selfpage'
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
   
-        <ManagerPage/>
+        <PersonalPage/>
  
       </header>
     </div>

@@ -48,24 +48,6 @@ h2{
 
     scale: 50%;
     
+    
 }
-button{
-    width: 100px;
-      background: none;
-      cursor: pointer;
-      border: none;
-      float: left;
-}
-button:hover{
-    opacity: 0.8;
-    border: none;
-    cursor: pointer;
-}
-@media screen and (min-width: 480px)
-{
-    .button
-    {
-        display: flex;
-        justify-content: center;
-    }
-}
+
