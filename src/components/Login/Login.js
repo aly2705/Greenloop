@@ -22,8 +22,6 @@ function Login() {
     if (!enteredEmail && !enteredPassword) return;
     //We perform html validation
 
-    console.log("submitted", enteredEmail, enteredPassword);
-
     const credentials = {
       email: enteredEmail,
       password: enteredPassword,
@@ -35,7 +33,7 @@ function Login() {
         new Date().getTime() + +data.expiresIn * 1000
       );
       const accType = data.email.includes("manager") ? "manager" : "personal";
-      console.log(data);
+
       authContext.login(data.idToken, accType, expirationTime.toISOString());
       if (accType === "manager") navigate("/manager");
       else navigate("/personal");
