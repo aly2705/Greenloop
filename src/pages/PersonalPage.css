@@ -1,11 +1,72 @@
 table,
 td,
 tr {
-  border: 1px solid;
-  border-color: white;
+  border: 10px solid transparent;
+  border-color: #1f1f1f;
   border-collapse: collapse;
+  border-radius: 23px;
 }
 table {
   text-align: left;
   width: 100%;
+  color: black;
+  height: 300px;
+}
+.pagelay {
+  width: 80%;
+  align-items: left;
+
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.pagelay td {
+  padding-left: 10px;
+}
+
+.pagelay tr:nth-child(odd) {
+  background-color: #90a955;
+}
+.pagelay tr:nth-child(even) {
+  background-color: #81e979;
+}
+
+.pagelay h2 {
+  float: right;
+  /* padding-right: 200px; */
+  color: #81e979;
+}
+.pagelay .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pagelay .flex2 {
+  display: flex;
+  align-items: center;
+}
+.pagelay .icon {
+  scale: 50%;
+}
+
+.back-btn {
+  width: 80px;
+  background: none;
+  cursor: pointer;
+  border: none;
+  float: left;
+}
+.back-btn:hover {
+  opacity: 0.8;
+  border: none;
+  cursor: pointer;
+}
+
+.back-btn img {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .button {
+    display: flex;
+    justify-content: center;
+  }
 }

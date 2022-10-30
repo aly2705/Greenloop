@@ -36,7 +36,7 @@ function Login() {
 
       authContext.login(data.idToken, accType, expirationTime.toISOString());
       if (accType === "manager") navigate("/manager");
-      else navigate("/personal");
+      else navigate("/personal?id=personal");
     } catch (err) {
       setError(err.message);
     }
